@@ -50,10 +50,25 @@ function Task({ task, onCorrect, alreadyCorrect, resetSignal }) {
     <div style={{ marginBottom: '1px' }}>
       {/* <p><strong>{task.id}</strong></p> */}
       {/* <p>{task.text}</p> */}
+    
 
+  
       {task.audio && (
-        <img controls src={task.audio}  style={{ width: '300px', height: '200px',  marginBottom: '10px', margin: '10px' }} />
-      )}
+  <img
+    src={process.env.PUBLIC_URL + task.audio}
+    alt="изображение"
+    style={{
+      width: '300px',
+      height: '200px',
+      marginBottom: '10px',
+      margin: '10px',
+      objectFit: 'cover',
+      borderRadius: '8px',
+      border: '1px solid #ccc'
+    }}
+  />
+)}
+
 
       {isCorrect && (
         <div className="correct-answer">
