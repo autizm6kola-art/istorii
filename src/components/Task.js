@@ -81,7 +81,7 @@ function Task({ task, onCorrect, alreadyCorrect, resetSignal }) {
         value={answer}
         onChange={handleChange}
         style={inputStyle}
-        placeholder="Что здесь происходит?"
+        placeholder="Кто? Что делает?"
         // disabled={isCorrect}
       />
       <button
