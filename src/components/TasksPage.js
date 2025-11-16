@@ -46,7 +46,7 @@ function TasksPage({ tasks, goBack }) {
 
   return (
     <div className="task-container">
-      <BackButton />
+      {/* <BackButton /> */}
 
       <button
         onClick={goBack}

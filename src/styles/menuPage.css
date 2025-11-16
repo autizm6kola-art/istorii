@@ -1,7 +1,7 @@
 .menu-container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 60px 20px 20px;
+  padding: 1px 20px 20px;
   position: relative;
 }
 
@@ -17,9 +17,15 @@
   margin-bottom: 20px;
 }
 
+.menu-progress-text-autor {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
 .range-buttons-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
   gap: 1px;
   justify-content: center;
 }
@@ -32,6 +38,8 @@
   border-radius: 20px;
   cursor: pointer;
 }
+
+
 
 @media (max-width: 600px) {
   .menu-container {
