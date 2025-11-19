@@ -53,7 +53,7 @@ function MenuPage({ allTasks, onSelectRange }) {
 
   return (
     <div className="menu-container">
-      {/* <BackButton /> */}
+      <BackButton />
 
       <h1 className="menu-title">Истории</h1>
 
