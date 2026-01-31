@@ -5,6 +5,7 @@ import { getTaskKey, clearAllAnswers } from '../utils/storage';
 import BackButton from './BackButton';
 import '../styles/menuPage.css';
 import { isTaskCorrect } from '../utils/storage';
+import BackupControls from './BackupControls';
 
 function MenuPage({ allTasks, onSelectRange }) {
   const [ranges, setRanges] = useState([]);
@@ -101,6 +102,7 @@ function MenuPage({ allTasks, onSelectRange }) {
       >
         Сбросить все ответы
       </button>
+      <BackupControls />
       <p className="menu-progress-text-autor">Автор приложения: autizm_i_6kola </p>
     </div>
   );
